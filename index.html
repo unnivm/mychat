@@ -234,6 +234,12 @@ h4 {
   cursor: pointer;
 }
 
+.selectedUser-label {
+  flex:center;
+  font-weight:bold;
+  font-size: 20px;
+  color:#18699b;
+}
 
 li {
             animation: fadeInAnimation ease 4s;
@@ -248,7 +254,6 @@ li {
                 opacity: 1;
             }
  }
-
 
 </style>
 </head>
@@ -265,7 +270,7 @@ li {
   
   <div class="grid-item-1">
     <p>
-      <input type="search" class="nosubmit" id="search" name="search" placeholder="Search...">
+      <input type="search" class="nosubmit" id="search" name="search" placeholder="Search..." style="color:white">
     </p>
 
     <p id="user-list">
@@ -308,9 +313,9 @@ li {
 
     </div>
 
-    <div class="grid-item-3" id="message-list">
+        <div class="grid-item-3" id="message-list">
       
-       <div id="chatWith"></div>
+       
       <!-- <div>
       <label class="items parent"  style="margin-left: 52%;padding-left: 10px;">Feb 06 at 11:40am</label>
       <li class="items him relative" style="margin-left: 52%;padding-top: 10px;padding-left: 10px;" >

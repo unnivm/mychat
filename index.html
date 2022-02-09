@@ -20,6 +20,14 @@
   background-color: #2196F3;
   padding: 10px;
 }
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 20% auto;
+  background-color: #f7f8f8;
+  padding: 10px;
+}
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
@@ -27,26 +35,143 @@
   text-align: center;
 }
 
-li {
-  border: 1px solid black;
+.grid-item-1 {
+  background-color: #0f4777;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  height: 600px;
+}
+
+.grid-item-2 {
+  background-color: white;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  height: 600px;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.grid-item-3 {
+  background-color: white;
+  padding: 10px;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+/* .items {
+  grid-row:1/1;
+} */
+
+input.nosubmit {
+  width: 260px;
+  border: 2px solid #e0e0e0;
+  border-radius: 25px;
+  display: block;
+  padding: 9px 4px 9px 40px;
+  background:  transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'  class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath fill='white' d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 220px center;
+  
+}
+input[id^=authText]::placeholder, input:focus{
+  color: black;
+}
+
+input[id^="msgTextInput"]::placeholder{
+  border: px solid #b5b9ba;
+  border-radius: 15px;
+  color:black;
+}
+
+button[id^="msgBtn"]:focus{
+  outline:  auto 5px;
+}
+
+button[id^="msgBtn"]:not(:hover){
+  outline: #18699b auto 1px;
+}
+
+
+/* .li-class {
+  color:#f7f8f8;
+  font-size: medium;
+  border-bottom-color: #e0e0e0 !important;
+} */
+
+/* input[type=search] {
+    background: url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 100% center;    
+    float:right;    
+} */
+
+/* li {
   list-style-type: none;
   margin: 2px 0;
   padding: 2px 5px; 
-  height: 20px;
+  height: 40px;
+  border: 1px;
+  border-color: #e0e0e0;
+  border-bottom-color: #e0e0e0;
+  color:#f7f8f8;
+  font-size: medium;
+  align-items: left;
+} */
+
+li {
+  list-style-type: none;
 }
 
+.li-class {
+  margin: 2px 0;
+  padding: 2px 5px; 
+  height: 40px;
+  border:1px solid white;
+  border-color: #e0e0e0;
+  border-bottom-color: #e0e0e0;
+  border-top-color:#0f4777;
+  border-left-color:  #0f4777;
+  border-right-color: #0f4777;
+  color:#f7f8f8;
+  text-align: left;
+}
 
-.him {
+.circle {
+        border-radius: 50%;
+        width: 10px;
+        height: 15px;
+        padding: 1px;
+        background: #0f4777;
+        border: 3px solid orange;
+        color: white;
+        text-align: center;
+}
+
+.textbox-border {
+  border: 2px sold #b5b9ba;
+  border-radius: 10px;
+  height: 40px;
+}
+
+div.parent:hover {
+    background: #18699b;
+}    ​
+
+.me{
   float: left;
-  border-radius: 0 10px 10px 0;
+  border-radius: 15px;
   clear: both;
   background-color: dodgerblue;
 }
-.me {
+
+.him {
   float: right;
-  border-radius: 10px 0 0 10px;
+  border-radius: 15px;
   clear: both;
-  background-color: cornflowerblue;
+  background-color: #e5772e;
+  word-wrap: break-word;
+  width: 50%;
+  height:40px;
+  color:#e0e0e0;
 }
 .him.start {
   border-top-left-radius: 10px;  
@@ -55,134 +180,21 @@ li {
   border-bottom-left-radius: 10px;  
 }
 .me.start {
-  border-top-right-radius: 10px;  
+  border-top-left-radius: 10px;  
 }
 .me.end {
   border-bottom-right-radius: 10px;  
 }
 
-/* .him .user {
+.user2 {
       font-size:0.6em;
       color: grey;
+      flex:left;
       margin: 0px 10px 0px 0px;
-} */
-
-/*
-.chat {
-      width: 300px;
-      border: solid 1px #EEE;
-      display: flex;
-      flex-direction: column;
-      padding: 10px;
+      position: relative;
 }
 
-    .messages {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .message {
-      border-radius: 20px;
-      padding: 8px 15px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      display: inline-block;
-    }
-
-    .yours {
-      align-items: flex-start;
-    }
-
-    .yours .message {
-      margin-right: 25%;
-      background-color: #eee;
-      position: relative;
-    }
-
-    .yours .message.last:before {
-      content: "";
-      position: absolute;
-      z-index: 0;
-      bottom: 0;
-      left: -7px;
-      height: 20px;
-      width: 20px;
-      background: #eee;
-      border-bottom-right-radius: 15px;
-    }
-    .yours .message.last:after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      bottom: 0;
-      left: -10px;
-      width: 10px;
-      height: 20px;
-      background: white;
-      border-bottom-right-radius: 10px;
-    }
-
-    .mine {
-      align-items: flex-end;
-    }
-
-    .mine .message {
-      color: white;
-      margin-left: 25%;
-      background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
-      background-attachment: fixed;
-      position: relative;
-    }
-
-    .mine .message.last:before {
-      content: "";
-      position: absolute;
-      z-index: 0;
-      bottom: 0;
-      right: -8px;
-      height: 20px;
-      width: 20px;
-      background: linear-gradient(to bottom, #00D0EA 0%, #0085D1 100%);
-      background-attachment: fixed;
-      border-bottom-left-radius: 15px;
-    }
-
-    .mine .message.last:after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      bottom: 0;
-      right: -10px;
-      width: 10px;
-      height: 20px;
-      background: white;
-      border-bottom-left-radius: 10px;
-    }
-    
-    .yours .user {
-      font-size:0.6em;
-      color: grey;
-      margin: 0px 0px 0px 10px;
-    }
-    
-    .mine .user {
-      font-size:0.6em;
-      color: grey;
-      margin: 0px 10px 0px 0px;
-      flex:left;
-    }
-    */
-
-    .user2 {
-      font-size:0.6em;
-      color: grey;
-      flex:left;
-      margin: 0px 10px 0px 0px;
-      position: relative;
-    }
-
-    h4 {
+h4 {
       color: grey;
       margin-top: -30px;
       height: 10px;
@@ -190,13 +202,44 @@ li {
       font-size: 10px;
       float: left;
       position:absolute;
-    }
+}
 
-    li {
+.parent {
+  position: relative;
+  height: 20px;
+}
+
+.relative {
+  position: relative;
+  top: -1px;
+}
+
+.relative1 {
+  position: relative;
+  top: 10px;
+  height:20px;
+}
+
+.button {
+  background-color: #18699b;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+li {
             animation: fadeInAnimation ease 4s;
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
-        }
+    }
         @keyframes fadeInAnimation {
             0% {
                 opacity: 0;
@@ -204,96 +247,103 @@ li {
             100% {
                 opacity: 1;
             }
-        }
+ }
+
 
 </style>
 </head>
 <body>
 
-  <h1>Subscription Results</h1>
-  <div id="SubscriptionResult"></div>
+  <!-- <h1>Subscription Results</h1>
+  <div id="SubscriptionResult"></div> -->
 
 <div id="mydiv"></div>
 <div id="auth"></div>
-   
-<!-- <h1>Grid Elements</h1>
-
-<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
-
--->
-
-<div id="auth"></div>
-
 
 <p height="20px;"></p>
-<div class="grid-container">
-  <div class="grid-item">Available Users in the Room:</div>
-  <div class="grid-item" id="chatWith">Test User</div>   
-  <div class="grid-item" id="user-list">
-    <!-- <li>abc test</li>
-    <li>Test user</li>
-    <li></li> -->
-    </div>
-
-  <div class="grid-item" id="message-list">
-   
-    <!-- <li class="him" >Lkdjskdjksdkjsdsdsdsdsdsdike is this an earthquake just go back to sleep.okaay   
-    <h4>abc, 19:20</h4>
-    </li>
-    
-    <li class="him" style="margin-top: 20px;">Like is this an earthquake just go back to sleep   
-      <h4>def, 19:30</h4>
-    </li>  
-    
-    
-    <li class="him" style="margin-top: 20px;">Like is this an earthquake just go back to sleep
-    <h4>def, 19:40</h4>
-    </li>    
+<div class="grid-container-1">
   
-    
-    <li class="him" style="margin-top: 20px;">Like is this an earthquake just go back to sleep
-    <h4>def, 19:55</h4>
-    </li> -->
-
-    <!-- <li class="me start">I am there
-      <h4>19:30</h4>
-    </li>
-    </p>
-    
-    <li class="me start" style="margin-top:20px;">I am there
-      <h4>19:40</h4>
-    </li>
+  <div class="grid-item-1">
+    <p>
+      <input type="search" class="nosubmit" id="search" name="search" placeholder="Search...">
     </p>
 
-    <li class="me start" style="margin-top:20px;">I am there
-      <h4>19:48</h4>
-    </li>
-    </p> -->
-    
+    <p id="user-list">
+
+      <!-- <div class="li-class parent">
+        <table>
+          <tr>
+              <td class="circle">AA</td>
+              <td>Abner Avila</td>
+          </tr>
+          </table>
+      </div>
+
+        <div class="li-class parent">
+          <table>
+            <tr>
+                <td class="circle">JB</td>
+                <td>John Brown</td>
+            </tr>
+            </table>
+         </div>
+
+         <div class="li-class parent">
+          <table>
+            <tr>
+                <td class="circle">JS</td>
+                <td>John Smith</td>
+            </tr>
+            </table>
+         </div>
+
+         <div class="li-class parent">
+          <table>
+            <tr>
+                <td class="circle">JB</td>
+                <td>Joe Biden</td>
+            </tr>
+            </table>
+         </div> -->
+
     </div>
-  
-  <div class="grid-item"></div>  
-  <div class="grid-item"></div>
 
-  <div class="grid-item"></div>
-  <div class="grid-item" id="message-send">
-    <input type="text" size="150" maxlength="50" id="msgTextInput">
-    <button id="msgBtn" >Send</button>
+    <div class="grid-item-3" id="message-list">
+      
+       <div id="chatWith"></div>
+      <!-- <div>
+      <label class="items parent"  style="margin-left: 52%;padding-left: 10px;">Feb 06 at 11:40am</label>
+      <li class="items him relative" style="margin-left: 52%;padding-top: 10px;padding-left: 10px;" >
+        Lkdjskdjksdkjsdsdsdsdsdsdike is this    
+      </li>
+     </div> -->
+    
+<!-- 
+      <label class="items parent"   style="float: left; margin-left: 10px;">19:30</label>
+      <li class="items  relative" style="width:50%;float: left;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px;padding-top: 10px;">I am there</li>
+       
+      <label class="items parent" style="margin-left: 52%;padding-left: 10px;">Feb 06 at 11:40am</label>      
+      <li class="items him relative" style="margin-left: 52%;padding-top: 10px;padding-left: 10px;">
+        Lkdjskdjksdkjsdsdsdsdsdsdike is this an earthquake just go back to sleep.okaay   
+      </li>
+      
+      <div class="items">19:40</div>
+      <div class="items">I am there</div>
+
+      <div class="items">Feb 06 at 11:40am</div>
+        <li class="items">Lkdjskdjksdkjsdsdsdsdsdsdikeds,smd,smd,m is this an earthquake just go back to sleep.okaay   
+       </li> -->
+
+    </div>
+    </p>
+  </div>
+
+<div class="grid-item" id="message-send" style="margin-bottom:250px;">
+    <input type="text" class="textbox-border" size="100" maxlength="50" id="msgTextInput" style="margin-left: -200px;" placeholder="Type a message...">
+    <p></p>
+    <button id="msgBtn" class="button" style="margin-left:320px;">Send</button>
+</div> 
 </div>
-
-  <!-- <div class="grid-item">8</div>
-  <div class="grid-item">8</div>
-  <div class="grid-item">9</div>   -->
-
-</div>
-
-<script src="main.bundle.js"></script>
-
-<script type="text/babel">
-    function login() {
-      alert("login ...");
-      window["userLogin"]();
-    }
-</script>
+ <script src="main.bundle.js"></script>
 </body>
 </html>

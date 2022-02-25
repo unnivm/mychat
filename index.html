@@ -164,21 +164,24 @@ li {
 }
 
 .him {
-  float: right;
+   float: right;
   border-radius: 15px;
-  clear: both;
-  background-color: #e5772e;
-  word-wrap: break-word;
-  width: 50%;
+   clear: both;
+   background-color: #e5772e;
+   word-wrap: break-word; 
+  width: 50%; 
   height:40px;
+  margin-top: 30px;
   color:#e0e0e0;
 }
-.him.start {
+
+/* .him.start {
   border-top-left-radius: 10px;  
 }
 .him.end {
   border-bottom-left-radius: 10px;  
-}
+} */
+
 .me.start {
   border-top-left-radius: 10px;  
 }
@@ -280,6 +283,15 @@ li {
 body {
   overflow: hidden;
 }
+
+.break-long-words {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+}
+
 </style>
 </head>
 <body>
@@ -355,23 +367,113 @@ body {
     <div>
     <div class="grid-item-3" id="message-list" style="overflow-y: scroll; height:465px;">
       
-       
-      <!-- <div>
-      <label class="items parent"  style="margin-left: 52%;padding-left: 10px;">Feb 06 at 11:40am</label>
-      <li class="items him relative" style="margin-left: 52%;padding-top: 10px;padding-left: 10px;" >
+      <!-- <table border = "1" style="width: 100%; max-height: 100px;"> -->
+        <!-- left column -->
+        <!-- <tr style="height: 20px;">
+          <td colspan="2" style="max-height: 20px;"><label class="parent ez-font-8"  style="margin-left: 0%;padding-left: 10px;">Feb 06 at 11:40am</label></td>
+        </tr>
+        <tr style="height: 20px; max-height: 20px;">
+          <td width="50%" style="vertical-align: top;height: 20px;" ><li class="relative ez-font-12" style="width:50%;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px; vertical-align: top;height:auto; min-height: 40px;">I am there</li></td>
+          <td width="50%"></td>
+        </tr>
+      
+         <tr style="height: 20px;">
+          <td colspan="2"><label class="parent parent ez-font-8"  style="margin-left: 0%;padding-left: 10px;">Feb 06 at 11:40am</label></td>
+        </tr> -->
+        
+        <!-- <tr>
+          <td class="ez-font-12 break-long-words" style="vertical-align: top;height: 20px;" width="30%">
+            <li style="width:100%;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px;vertical-align: top;height:auto; min-height: 40px;">
+              I am there jdsjdksjdksjdkd,s,fm,df,df,dfsjkjd123456dfkdkldfkdflkdkfd
+              qqqqqq kdldkslskdd lksdlskd8439849384lffdfdfdfk 3493934394039 jdskksdksjdksdksjd11111112222
+              dsmnjsdnsmnmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmruieuierueruieurieurieurieurieurieurieurieurieurieurieurieuiru0
+            </li>
+          </td>
+          <td width="70%"></td>
+        </tr> -->
+      
+
+        <!-- right column -->
+        <!-- <tr style="height:20px"></tr>
+        <tr style="height: 20px;">
+          <td colspan="2"><label class="parent parent ez-font-8"  style="margin-left: 61%;padding-left: 10px;">Feb 06 at 11:40am</label></td>
+        </tr>
+        <tr style="height:20px">
+          <td></td>
+          <td><li class="him ez-font-12 break-long-words" style="width:100%;padding-left:10px;padding-bottom: 30px;margin-top: -0px;height: auto;min-height: 40px;">
+            Lkdjskdjksdkjsdsdsdsdsdsdike is this an earthquake just go back to sleep.okaay
+            dkfkdfjdf kjdfkdjfkddkfjkdfjgjdfg dfdkfjdkjgdkfj483984938493480   
+          </li></td>
+        </tr>
+
+         <tr style="height: 20px;">
+          <td colspan="2"><label class="parent parent ez-font-8"  style="margin-left: 0%;padding-left: 10px;">Feb 06 at 11:40am</label></td>
+        </tr>
+        <tr style="height: 20px;">
+          <td style="vertical-align: top;height: 20px;"><li class="relative ez-font-12" style="width:100%;float: left;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px; vertical-align: top;height:auto; min-height: 40px;">I am there</li></td>
+          <td width="50%"></td>
+        </tr>
+      
+        <tr style="height: 20px;">
+          <td colspan="2"><label class="parent parent ez-font-8"  style="margin-left: 0%;padding-left: 10px;">Feb 06 at 11:40am</label></td>
+        </tr>
+        <tr>
+          <td class="ez-font-12" style="vertical-align: top;height: 20px;" width="30%">
+            <li style="width:100%;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px;vertical-align: top;height:auto; min-height: 40px;word-wrap:break-word">
+              I am there jdsjdksjdksjdkd,s,fm,df,df,dfsjkjd123456dfkdkldfkdflkdkfd
+              qqqqqq kdldkslskdd lksdlskd8439849384lffdfdfdfk 3493934394039 jdskksdksjdksdksjd11111112222
+            </li>
+          </td>
+          <td width="70%"></td>
+        </tr> -->
+
+        <!-- left column -->
+        <!-- <tr style="height: 20px;">
+          <td colspan="2"><label class="parent parent ez-font-8"  style="margin-left: 0%;padding-left: 10px;">Feb 06 at 11:40am</label></td>
+        </tr>
+        <tr style="height: 20px;">
+          <td style="vertical-align: top;height: 20px;"><li class="relative ez-font-12" style="width:100%;float: left;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px; vertical-align: top;height:auto; min-height: 40px;">I am there</li></td>
+          <td width="50%"></td>
+        </tr>
+      
+        <tr style="height: 20px;">
+          <td colspan="2"><label class="parent parent ez-font-8"  style="margin-left: 0%;padding-left: 10px;">Feb 06 at 11:40am</label></td>
+        </tr>
+        <tr>
+          <td class="ez-font-12" style="vertical-align: top;height: 20px;" width="30%">
+            <li style="width:100%;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px;vertical-align: top;height:auto; min-height: 40px;word-wrap:break-word">
+              I am there jdsjdksjdksjdkd,s,fm,df,df,dfsjkjd123456dfkdkldfkdflkdkfd
+              qqqqqq kdldkslskdd lksdlskd8439849384lffdfdfdfk 3493934394039 jdskksdksjdksdksjd11111112222
+            </li>
+          </td>
+          <td width="70%"></td>
+        </tr>  
+      </table> -->
+
+    <!-- <div class="grid-item-4"> -->
+      <!-- <label class="parent"  style="margin-left: 52%;padding-left: 10px;">Feb 06 at 11:40am</label> -->
+    <!-- </div> -->
+
+    <!-- <div class="grid-item-4"> -->
+      <!-- <li class="him" style="margin-left: 52%;padding-top: 10px;padding-left: 10px;" >
         Lkdjskdjksdkjsdsdsdsdsdsdike is this    
-      </li>
-     </div> -->
+      </li> -->
+    <!-- </div>   -->
+     
     
-<!-- 
-      <label class="items parent"   style="float: left; margin-left: 10px;">19:30</label>
-      <li class="items  relative" style="width:50%;float: left;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px;padding-top: 10px;">I am there</li>
-       
-      <label class="items parent" style="margin-left: 52%;padding-left: 10px;">Feb 06 at 11:40am</label>      
-      <li class="items him relative" style="margin-left: 52%;padding-top: 10px;padding-left: 10px;">
+       <!-- <label class="items parent"   style="float: left; margin-left: 10px;">19:30</label> -->
+    <!-- <div>
+      <li class="relative" style="width:50%;float: left;background-color: #e9f0f2; border-radius: 15px; padding-left: 10px;padding-top: 10px;margin-bottom: 180px;">I am there</li>
+      <label class="items parent"   style="float: left; margin-left: 10px;margin-top: 10px;">19:30</label>
+      <li class="him" style="margin-left: 52%;padding-top: 10px;padding-left:10px;">
         Lkdjskdjksdkjsdsdsdsdsdsdike is this an earthquake just go back to sleep.okaay   
       </li>
-      
+      <label class="items parent"   style="float: left; margin-left: 10px;margin-top: 10px;">19:30</label>
+      <li class="him" style="margin-left: 52%;padding-top: 10px;padding-left:10px;">
+        Lkdjskdjksdkjsdsdsdsdsdsdike is this an earthquake just go back to sleep.okaay   
+      </li>
+    </div> -->
+<!--      
       <div class="items">19:40</div>
       <div class="items">I am there</div>
 

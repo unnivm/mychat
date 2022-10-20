@@ -365,7 +365,7 @@ body {
      
     <!--second column-->
     <div>
-    <div class="grid-item-3" id="message-list" >
+    <div class="grid-item-3" id="message-list" style="overflow-y: scroll; height:465px;">
       
       <!-- <table border = "1" style="width: 100%; max-height: 100px;"> -->
         <!-- left column -->
